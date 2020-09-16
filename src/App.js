@@ -27,6 +27,21 @@ function App() {
         dispatch({
           type: 'SET_USER',
           user:  user
+        });
+      });
+      spotify.getUserPlaylists()
+      .then(playlists => {
+        dispatch({
+          type: 'SET_PLAYLISTS',
+          playlists: playlists
+        });
+      });
+
+      spotify.getPlaylist('2KtgJQ9ODGmVVvEYxnCda9')
+      .then(response => {
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response
         })
       })
     }

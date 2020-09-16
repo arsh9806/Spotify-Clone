@@ -7,6 +7,11 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+.sidebar > hr {
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
+}
 .sidebar__logo {
     height: 70px;
     padding: 10px;
@@ -15,11 +20,5 @@
 .sidebar__title {
     margin-left: 10px;
     padding: 5px;
-    font-size: 100px;
-    font-size: 12px;
-}
-.sidebar__title > hr {
-    border: 1px solid #282828;
-    width: 90%;
-    margin: 10px;
+    font-size: 12px !important;
 }
